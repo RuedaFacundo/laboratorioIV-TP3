@@ -1,6 +1,5 @@
 # Laboratorio IV - TP Nro. 3
 
-Trabajo practico 3 de Laboratorio IV.
 
 **Consigna** :book:
 
