@@ -2,7 +2,7 @@
 
 Trabajo practico 3 de Laboratorio IV.
 
-**Consigna**
+**Consigna** :book:
 
 1. Partiendo de lo siguiente:
 <pre><code>$myNumber = 123; 
