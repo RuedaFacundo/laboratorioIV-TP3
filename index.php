@@ -96,16 +96,26 @@
 
     echo "El total de mujeres menores de edad es de: " . $count2 . "<br>";
 
-    echo '<table border="1">';
-    foreach ($people as $r ) {
-        echo '<tr>'; // tendra tres columnas, por las tres key
+    ?>
+    <table border="1">
+    <?php
+    foreach ( $people as $r ) {
+        ?>
+        <tr>
+        <?php
         foreach ( $r as $v ) {
-            echo '<td>'.$v.'</td>'; // imprime los valores en la celda
+            ?>
+                <td><?php echo $v;?></td>
+            <?php
         }
-        echo '</tr>';
+        ?>
+        </tr>
+    <?php
     }
-    echo '</table>';
+    ?>
+    </table>
 
+    <?php
     $age = array();
 
     foreach($people as $key => $value){
