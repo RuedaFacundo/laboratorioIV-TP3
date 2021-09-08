@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="baseStyle.css">
+    <title>Trabajo Practico 2</title>
+</head>
+<body>
+    <form action="action.php" method="POST">
+        <h1>Contact Form</h1>
+        <div>
+        <span class="numberstyle">1</span> Your basic info
+        <div>
+            <label for="firstName" class="subtitle">Name</label>
+            <input type="text" name="firstName" class="size" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" class="size" required>
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" name="pass" class="size" required>
+        </div>
+        <div>
+            <label for="date">Birthday</label>
+            <input type="date" name="date" placeholder="dd/mm/aaaa" class="size" required> 
+        </div>
+        <div>
+            Sex: 
+            <input type="radio" name="answer" value="Male"> Male
+            <input type="radio" name="answer" value="Female"> Female
+        </div>
+        <span class="numberstyle">2</span> Your profile <br>
+        <p class="subtitle">About You</p> 
+        <div>
+            <textarea name="text" cols="56" rows="3"></textarea>
+        </div>
+        <div>
+            <span style="display: block;">Role</span> 
+            <select name="role" class="size">
+                <option value="Front">Front-End Developer</option>
+                <option value="Back">Back-End Developer</option>
+                <option value="QA">QA</option>
+                <option value="UX">UX</option>
+                <option value="UI">UI</option>
+            </select>
+        </div>
+        Interests
+        <div>
+            <input type="checkbox" name="Interests" value="Data Base"> Data Base
+            <input type="checkbox" name="Interests" value="Design"> Design
+            <input type="checkbox" name="Interests" value="Business"> Business
+            <input type="checkbox" name="Interests" value="Unit Test"> Unit Test
+            <input type="checkbox" name="Interests" value="Cloud Development"> Cloud Development
+            <input type="checkbox" name="Interests" value="Web Development"> Web Development
+        </div>
+        <div class="divbuttom">
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </div>
+        </div>
+
+    </form>
+</body>
+</html>
