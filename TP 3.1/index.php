@@ -71,6 +71,7 @@
             $StringKey = array_keys($arrayAssoc);
             return $StringKey;
         }
+        $ArrayKeys = array();
         $ArrayKeys = keys($ArrayKeys, $arrayAssociative);
         
         echo "Las keys del array son: " . implode(",", $ArrayKeys) . "<br>";
