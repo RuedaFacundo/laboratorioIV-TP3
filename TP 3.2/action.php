@@ -8,17 +8,6 @@
     <title>TP 3.2</title>
 </head>
 <body>
-    <?php
-        /* 1er intento para imprimir los checkbox
-        if(isset($_POST["submit"])){
-            if(!empty($_POST["Interests"])){
-                foreach($_POST["Interests"] as $selected){
-                    echo $selected."</br>";// Imprime resultados
-                }
-            }
-        }*/
-    ?>
-
     <table>
         <tr><td colspan="2" class="back">Your Basic Info</td></tr> 
         <tr class="backRow">
@@ -76,11 +65,19 @@
             <td><?php echo "Interests";?></td>
             <td>
                 <?php         
-                /* Segundo intento de imprimir los checkbox
-                    if(!empty($_POST["Interests"])){
-                        foreach($_POST["Interests"] as $selected){
-                            echo $selected."</br>";
-                        } */
+                    if (isset($_POST['DB'])){
+                        echo "Data Base";
+                    } else if (isset($_POST['DES'])) {
+                        echo "Design";
+                    } else if (isset($_POST['BUS'])) {
+                        echo "Business";
+                    } else if (isset($_POST['UT'])) {
+                        echo "Unit Test";
+                    } else if (isset($_POST['CD'])) {
+                        echo "Cloud Development";
+                    } else if (isset($_POST['WD'])) {
+                        echo "Web Development";
+                    }
                 ?>
             </td>
         </tr>
