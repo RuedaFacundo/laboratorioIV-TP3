@@ -80,3 +80,34 @@ Dato: (valide el script intercambiando los valores de todas las variables).
 9.	Cree una pequeña página web que contenga un formulario con tres input de texto para poder rellenar la información de una nueva persona (como las del ejercicio 5). Este formulario debe enviarse a otro script php, quien debe mostrar una tabla bien formada.
 
 10.	Si no lo hizo en el ejercicio anterior, valide que los datos ingresados sean correctos. Si no lo son, debe volver a la página anterior.
+
+
+# Laboratorio IV - TP Nro. 3.1
+
+1.  Se tiene el siguiente string:
+    <pre><code>$name = 'juan,maria,pepe,andrea,jorgelina,cecilia';</pre></code>
+  - Crear un arreglo de nombres y mostrarlo por pantalla.
+  - Ordenar alfabéticamente el arreglo de nombres de forma ascendente y mostrar por pantalla.
+  - Convertir en mayúscula el primer caracter de cada nombre y pasarlo a un nuevo arreglo llamado $newArray. Mostrar por pantalla.
+  - Obtener la cantidad de valores de $newArray. Crear un nuevo arreglo con enteros llamado $keys. Obtener la cantidad del mismo. Chekeando ambas cantidades colocadas en dos variables, utilizar la función array_combine() para generar un nuevo arreglo llamado $arrayAssociative. Las cantidades deben ser iguales.
+  - Mostrar por pantalla $ arrayAssociative..
+ 
+2.	Hacer una función que reciba como parámetros un valor y un array y mostrar por pantalla un mensaje que informe si ese valor existe o no en el array. Verificar resultado llamando a dicha función.
+3.	Hacer una función que reciba una key y un array y luego de verificar si esa key existe en dicho arreglo, muestre el valor asociado a la misma.
+4.	Armar una función que dado el $array arrayAssociative., retorne todas sus claves en un string separado por comas. Mostrar string por pantalla al llamar a la función.
+
+
+# Laboratorio IV - TP Nro. 3.2
+
+1.	Se pide procesar los datos enviados en el formulario del TP2 para ser visualizados de la siguiente forma en una tabla de orden vertical.
+  - La tabla se deben generar seguido de procesamiento de la información.
+  - Validar los datos enviados como se indica a continuación:
+    - Datos Requeridos (Name, email, password y birth-day)
+    - En el caso del sexo, mostrar correctamente el dato seleccionado, en caso contrario indicar [Unspecified ].
+    - En caso de la Bio (About me), mostrar lo ingresado en el formulario, en caso contrario [Unspecified ].
+  - Los intereses se deben procesar correctamente para exponer en la tabla solo los datos seleccionados en el formulario previamente.
+
+Se proporciona un Ejemplo de cómo podría quedar finalizada la tabla de Datos.
+
+![image](https://user-images.githubusercontent.com/75460259/132689998-12cf20b7-71b0-4759-8c52-fec26f816747.png)
+
