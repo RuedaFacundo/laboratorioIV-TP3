@@ -64,19 +64,12 @@
         <tr class="backRow">
             <td><?php echo "Interests";?></td>
             <td>
-                <?php         
-                    if (isset($_POST['DB'])){
-                        echo "Data Base";
-                    } else if (isset($_POST['DES'])) {
-                        echo "Design";
-                    } else if (isset($_POST['BUS'])) {
-                        echo "Business";
-                    } else if (isset($_POST['UT'])) {
-                        echo "Unit Test";
-                    } else if (isset($_POST['CD'])) {
-                        echo "Cloud Development";
-                    } else if (isset($_POST['WD'])) {
-                        echo "Web Development";
+                <?php
+                    $check = array();
+                    $check = $_POST['check'];
+                    foreach($check as $value)
+                    {
+                        echo $value . "<br>";
                     }
                 ?>
             </td>
